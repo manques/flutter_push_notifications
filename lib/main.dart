@@ -30,7 +30,13 @@ void main() async {
     print('Permission  granted: ${setting.authorizationStatus}');
   }
   // FCM registration token
-  String? token = await messaging.getToken();
+  String? token;
+  if (DefaultFirebaseOptions.currentPlatform == DefaultFirebaseOptions.web) {
+    token = await messaging.getToken(vapidKey: vapidKey);
+  } else {
+    token = await messaging.getToken();
+  }
+
   if (kDebugMode) {
     print('Registration token: $token');
   }
