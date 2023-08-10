@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1015324588991",
+    "project_id": "tenneo-78be6",
+    "storage_bucket": "tenneo-78be6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015324588991:android:a9f0ba5e2c5969f069bf0a",
+        "android_client_info": {
+          "package_name": "com.tenneo.lms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015324588991-ddqcagd9sknj18nd2a4ovqrgm51bplru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5oLJIMFFYuKuoI2otP_N8v-6Z40ISnx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015324588991-ddqcagd9sknj18nd2a4ovqrgm51bplru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
