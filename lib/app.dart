@@ -1,25 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_push_notifications/features/firebase_screen/firebase_screen.dart';
+import 'package:flutter_push_notifications/core/theme/theme.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class App extends StatelessWidget {
+  const App({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Push',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter Push Notifications'),
-        ),
-        body: const Center(
-          child: Text('Welcome Push'),
-        ),
-      ),
+      theme: theme,
+      home: const FirebaseScreen(),
     );
   }
 }

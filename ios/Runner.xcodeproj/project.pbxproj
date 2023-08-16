@@ -166,7 +166,6 @@
 				ECF529CB12D74151499655EC /* Pods-RunnerTests.release.xcconfig */,
 				93F706B4332C53CF8346201C /* Pods-RunnerTests.profile.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
