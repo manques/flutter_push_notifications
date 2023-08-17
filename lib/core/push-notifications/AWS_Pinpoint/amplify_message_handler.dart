@@ -6,7 +6,7 @@ Future<void> amplifyForegroundMessageHandler() async {
   final subscription = Amplify
       .Notifications.Push.onNotificationReceivedInForeground
       .listen(amplifyForegroundMessageReceivedHandler);
-  subscription.cancel();
+  // subscription.cancel();
 }
 
 void amplifyForegroundMessageReceivedHandler(
@@ -33,7 +33,7 @@ Future<void> amplifyBackgroundMessageReceivedHandler(
 Future<void> amplifyOpenedMessageHandler() async {
   final subscription = Amplify.Notifications.Push.onNotificationOpened
       .listen(amplifyOpenedMessageReceivedHandler);
-  subscription.cancel();
+  // subscription.cancel();
 }
 
 Future<void> amplifyOpenedMessageReceivedHandler(

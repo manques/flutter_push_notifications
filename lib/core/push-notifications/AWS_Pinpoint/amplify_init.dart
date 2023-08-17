@@ -14,6 +14,11 @@ Future<void> amplifyInit() async {
     final authPlugin = AmplifyAuthCognito();
     final pushPlugin = AmplifyPushNotificationsPinpoint();
 
+    await Amplify.addPlugins([authPlugin, pushPlugin]);
+    if (!Amplify.isConfigured) {
+      await Amplify.configure(amplifyconfig);
+    }
+
     // permission
     await amplifyRequestPermissions();
     // token
@@ -26,12 +31,7 @@ Future<void> amplifyInit() async {
     amplifyOpenedMessageHandler();
     // on tap launch
     amplifyLaunchHandler();
-
-    await Amplify.addPlugins([authPlugin, pushPlugin]);
-    if (!Amplify.isConfigured) {
-      await Amplify.configure(amplifyconfig);
-    }
-  } on Exception catch (e) {
-    safePrint('An error occurred configuring Amplify: $e');
+  } catch (e) {
+    print('An error occurred configuring Amplify: $e');
   }
 }
