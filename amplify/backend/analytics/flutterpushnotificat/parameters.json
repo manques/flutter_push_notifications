@@ -1,0 +1,21 @@
+{
+    "appName": "flutterpushnotificat",
+    "roleName": "pinpointLambdaRolefe3c37eb",
+    "cloudformationPolicyName": "cloudformationPolicyfe3c37eb",
+    "cloudWatchPolicyName": "cloudWatchPolicyfe3c37eb",
+    "pinpointPolicyName": "pinpointPolicyfe3c37eb",
+    "authPolicyName": "pinpoint_amplify_fe3c37eb",
+    "unauthPolicyName": "pinpoint_amplify_fe3c37eb",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

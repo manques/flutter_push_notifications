@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_push_notifications/core/push-notifications/FCM/message_handler.dart';
+import 'package:flutter_push_notifications/core/push-notifications/FCM/firebase_message_handler.dart';
 
 class FirebaseScreen extends StatefulWidget {
   const FirebaseScreen({super.key});

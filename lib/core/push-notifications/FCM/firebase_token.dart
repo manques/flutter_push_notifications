@@ -1,5 +1,6 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
+
 import 'package:flutter_push_notifications/core/push-notifications/FCM/firebase_options.dart';
 
 Future<void> firebaseToken(FirebaseMessaging messaging) async {
